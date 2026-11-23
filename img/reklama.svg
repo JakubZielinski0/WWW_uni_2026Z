@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+  <rect width="600" height="300" fill="#dcdcdc"/>
+  <rect x="8" y="8" width="584" height="284" fill="none" stroke="#8a8a8a" stroke-width="2" stroke-dasharray="14 10"/>
+  <rect x="100" y="100" width="400" height="100" fill="#c6c6c6" stroke="#8a8a8a" stroke-width="2"/>
+  <text x="300" y="140" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#5a5a5a" text-anchor="middle">REKLAMA — miejsce na baner</text>
+  <text x="300" y="174" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7a7a7a" text-anchor="middle">Docelowy plik: img/reklama.jpg (np. własna kompozycja kosmiczna)</text>
+  <text x="300" y="202" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#9a9a9a" text-anchor="middle">użyj zdjęcia z domeny publicznej lub CC</text>
+</svg>
