@@ -1,6 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
+
+#banner {
+  width: 100%;
+  margin: 0 0 1.5rem;
+}
+
+#banner img {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+#banner figcaption,
+.galeria figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.4rem;
+}
+
 #logo {
     width: 40px;
     height: 40px;
@@ -34,4 +64,39 @@ body {
 .galeria img {
     width: 100%;
     height: auto;
+}
+footer {
+  text-align: center;
+}
+
+.o-stronie {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.o-stronie > p {
+    flex: 1 1 20rem;
+}
+
+aside.reklama {
+    flex: 1 1 14rem;
+}
+
+aside.reklama img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+}
+
+@media (max-width: 40rem) {
+    .site-header nav ul {
+        justify-content: center;
+    }
+
+    #banner img {
+        max-height: 260px;
+    }
 }
