@@ -23,3 +23,15 @@ body {
     gap: 0.75rem;
 }
 
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.galeria figure {
+    flex: 1 1 12rem;
+}
+.galeria img {
+    width: 100%;
+    height: auto;
+}
