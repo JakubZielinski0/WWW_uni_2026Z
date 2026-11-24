@@ -3,9 +3,22 @@
 *::after {
     box-sizing: border-box;
 }
-
+:root {
+    --tlo: #ffffff;
+    --tekst: #111111;
+    --linia: #000000;
+    --przygaszony: #555555;
+}
+body.dark {
+    --tlo: #0e0e10;
+    --tekst: #f2f2f2;
+    --linia: #f2f2f2;
+    --przygaszony: #b5b5b5;
+}
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--tlo);
+    color: var(--tekst);
     max-width: 60rem;
     margin: 0 auto;
     padding: 0 1rem;
@@ -22,31 +35,31 @@ a:hover {
     text-decoration: underline;
 }
 
-ul {
-    padding: 0px;
-    margin: 0px;
-}
 header {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#banner {
-  width: 100%;
-  margin: 0 0 1.5rem;
+.hero {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center 75%;
+    padding: 3rem 1rem;
+    margin-bottom: 1.5rem;
 }
 
-#banner img {
-  display: block;
-  width: 100%;
-  max-height: 500px;
-  object-fit: cover;
-  object-position: center 45%;
-}
 
-#banner figcaption,
+.hero-tresc {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
 .galeria figcaption {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--przygaszony);
   margin-top: 0.4rem;
 }
 
@@ -54,6 +67,10 @@ header {
     width: 40px;
     height: 40px;
 }
+body.dark #logo {
+    filter: invert(1);
+}
+
 #skip-link {
   position: absolute;
   left: 0.5rem;
@@ -70,6 +87,10 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.site-header ul {
+    padding: 0px;
+    margin: 0px;
 }
 .site-header p {
     margin: 0;
@@ -131,7 +152,7 @@ aside.reklama img {
         justify-content: center;
     }
 
-    #banner img {
-        max-height: 260px;
+    .hero {
+        padding: 1.5rem 0.5rem;
     }
 }

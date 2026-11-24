@@ -31,12 +31,13 @@
     </header>
     
     <main id="tresc">
-        <h1>Witamy na stronie o historii lotów kosmicznych</h1>
-        <figure id="banner">
-            <img alt="Ziemia widziana nad horyzontem Księżyca, zdjęcie Earthrise z misji Apollo 8"
-                 src="img/banner.jpg" width="1920" height="1920">
-            <figcaption>Ziemia nad horyzontem Księżyca — zdjęcie „Earthrise”, misja Apollo 8, 1968 (zdjęcie: NASA, domena publiczna)</figcaption>
-        </figure>
+        <section class="hero">
+            <div class="hero-tresc">
+                <h1>Witamy na stronie o historii lotów kosmicznych</h1>
+                <p>Kalendarium podboju kosmosu: USA, ZSRR i reszta świata</p>
+                <small>Zdjęcie tła: „Earthrise”, Apollo 8, 1968 — NASA (domena publiczna)</small>
+            </div>       
+        </section>
         <section>
             <h2>O stronie</h2>
             <div class="o-stronie">
@@ -96,6 +97,7 @@
         <small id="footer">Copyright &copy; 2026 Jakub Zieliński</small>
         <p><small id="zegar"></small></p>
         <button type="button" onclick="reset_zegar()">Zatrzymaj/Wznów Zegar</button>
+        <button type="button" id="motyw-btn" aria-pressed="false">Ciemny motyw</button>
     </footer>
 </body>
 </html>

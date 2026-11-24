@@ -32,3 +32,12 @@ function reset_zegar() {
         isZegarRunning = true
     }
 }
+
+
+const motywBtn = document.getElementById("motyw-btn");
+
+motywBtn.addEventListener("click", () => {
+    const ciemny = document.body.classList.toggle("dark");
+    motywBtn.setAttribute("aria-pressed", String(ciemny));
+    motywBtn.textContent = ciemny ? "Jasny motyw" : "Ciemny motyw";
+});
