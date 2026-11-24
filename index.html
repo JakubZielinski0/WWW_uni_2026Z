@@ -21,7 +21,7 @@
         </p>
         <nav aria-label="Nawigacja Główna">
             <ul>
-                <li><a href="./index.html" aria-current="page">Strona Główna</a></li>
+                <li><a id="selected" href="./index.html" aria-current="page">Strona Główna</a></li>
                 <li><a href="./usa.html">USA</a></li>
                 <li><a href="./zsrr.html">ZSRR</a></li>
                 <li><a href="./reszta-swiata.html">Reszta Świata</a></li>
@@ -94,6 +94,8 @@
     </main>
     <footer>
         <small id="footer">Copyright &copy; 2026 Jakub Zieliński</small>
+        <p><small id="zegar"></small></p>
+        <button type="button" onclick="reset_zegar()">Zatrzymaj/Wznów Zegar</button>
     </footer>
 </body>
 </html>

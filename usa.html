@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Zieliński">
+    <meta name="description" content="Historia lotów kosmicznych: USA, ZSRR i reszta świata. Projekt P1, witryna typu MPA.">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, MPA, loty kosmiczne">
+    <title>Historia lotów kosmicznych</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <a id="skip-link" href="#tresc">Przejdź do treści</a>
+    <header class="site-header">        
+        <p>
+            <a href="./index.html" aria-current="page">
+                <img alt="Logo Orbita" id="logo" src="./img/logo.png" width="40" height="40">
+                Orbita - Historia Lotów Kosmicznych
+            </a>
+        </p>
+        <nav aria-label="Nawigacja Główna">
+            <ul>
+                <li><a id="selected" href="./index.html" aria-current="page">Strona Główna</a></li>
+                <li><a href="./usa.html">USA</a></li>
+                <li><a href="./zsrr.html">ZSRR</a></li>
+                <li><a href="./reszta-swiata.html">Reszta Świata</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="tresc">
+        <h1>Witamy na stronie o historii lotów kosmicznych</h1>
+        <figure id="banner">
+            <img alt="Ziemia widziana nad horyzontem Księżyca, zdjęcie Earthrise z misji Apollo 8"
+                 src="img/banner.jpg" width="1920" height="1920">
+            <figcaption>Ziemia nad horyzontem Księżyca — zdjęcie „Earthrise”, misja Apollo 8, 1968 (zdjęcie: NASA, domena publiczna)</figcaption>
+        </figure>
+        <section>
+            <h2>O stronie</h2>
+            <div class="o-stronie">
+                <p>
+                    Cześć witaj na naszej stronie!
+                    Jest to strona o historii lotów kosmicznych która przedstawia najważniejsze wydarzenia.
+                    Jeśli chcesz się z nami skontaktować i wesprzeć tą społeczność napisz <a href="./kontakt.html">tutaj</a>
+                </p>
+                <aside class="reklama" aria-label="Baner reklamowy">
+                    <img alt="Miejsce na reklamę" src="img/reklama.svg" width="600" height="300">
+                </aside>
+            </div>
+        </section>
+        <section>
+            <h2>Galeria zdjęć</h2>
+            <div class="galeria">
+                <figure>
+                    <img alt="Explorer 1 montowany na rakietę Jupiter-C, 1958" src="./img/usa-1958.jpg" width="1280" height="1657">
+                    <figcaption>1958 — Explorer 1, pierwszy satelita USA (zdjęcie: NASA, domena publiczna)</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Alan Shepard w kapsule Freedom 7 przed startem" src="./img/usa-1961.jpg" width="1280" height="1958">
+                    <figcaption>1961 — Alan Shepard, pierwszy Amerykanin w kosmosie (zdjęcie: NASA, domena publiczna)</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Start rakiety Saturn V z misją Apollo 11" src="./img/usa-1969.jpg" width="1280" height="1607">
+                    <figcaption>1969 — start misji Apollo 11 (zdjęcie: NASA, domena publiczna)</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Makieta satelity Sputnik 1" src="./img/zsrr-1957.jpg" width="1280" height="905">
+                    <figcaption>1957 — Sputnik 1, pierwszy sztuczny satelita Ziemi (zdjęcie: shakko / Wikimedia Commons, CC BY-SA 3.0)</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Jurij Gagarin na konferencji prasowej w Helsinkach, 1961" src="./img/zsrr-1961.jpg" width="1280" height="1600">
+                    <figcaption>1961 — Jurij Gagarin, pierwszy człowiek w kosmosie (zdjęcie: domena publiczna)</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Śluza powietrzna i skafander Berkut z misji Woschod 2" src="./img/zsrr-1965.jpg" width="1280" height="1707">
+                    <figcaption>1965 — wyposażenie misji Woschod 2 i pierwszy spacer kosmiczny (zdjęcie: domena publiczna)</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Makieta francuskiego satelity Astérix w muzeum w Le Bourget" src="./img/swiat-1965.jpg" width="1280" height="1000">
+                    <figcaption>1965 — francuski satelita Astérix (zdjęcie: Pline / Wikimedia Commons, CC BY-SA 3.0)</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Pierwszy start rakiety Ariane 1 z kosmodromu Kourou" src="./img/swiat-1979.jpg" width="1920" height="2446">
+                    <figcaption>1979 — pierwszy start rakiety Ariane 1 (zdjęcie: ESA, CC BY-SA 3.0 IGO)</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Lądownik Vikram na powierzchni Księżyca, misja Chandrayaan-3" src="./img/swiat-2023.png" width="1280" height="902">
+                    <figcaption>2023 — lądownik Vikram misji Chandrayaan-3 (zdjęcie: semeion.photo, CC BY 2.0)</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small id="footer">Copyright &copy; 2026 Jakub Zieliński</small>
+        <p><small id="zegar"></small></p>
+        <button onclick="reset_zegar()">Zatrzymaj/Wznów Zegar</button>
+    </footer>
+</body>
+</html>

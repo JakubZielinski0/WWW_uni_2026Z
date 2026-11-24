@@ -10,6 +10,25 @@ body {
     margin: 0 auto;
     padding: 0 1rem;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#selected {
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    margin-top: 10px;
+}
 
 #banner {
   width: 100%;
@@ -46,6 +65,21 @@ body {
 #skip-link:focus {
   top: 0.5rem;
 }
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-header p {
+    margin: 0;
+}
+.site-header p a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+}
 .site-header nav ul {
     list-style: none;
     display: flex;
@@ -67,6 +101,7 @@ body {
 }
 footer {
   text-align: center;
+  margin: 10px;
 }
 
 .o-stronie {
