@@ -6,7 +6,7 @@ const motywBtn = document.getElementById("motyw-btn")
 function zegar() {
     let text = ""
 
-    text += new Date().getDay() + "." + new Date().getMonth() + "." + new Date().getFullYear() +"   "
+    text += new Date().getDate() + "." + (new Date().getMonth()+1) + "." + new Date().getFullYear() +"   "
 
     if(new Date().getHours() < 10) {
         text += "0"
