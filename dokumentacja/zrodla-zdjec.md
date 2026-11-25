@@ -24,10 +24,11 @@ znakami towarowymi** — nie umieszczaj ich jako grafiki witryny.
 
 ## REKLAMA (baner boczny / „aside")
 
-Placeholder: `img/reklama.svg` (600×300). Do pola reklamowego użyj:
-- dowolnego zdjęcia z tej listy (najlepiej PD NASA — zero obowiązków), np.
-  Earthrise/Blue Marble z przycięciem 600×300, albo
-- własnej kompozycji (nie jest to fotografia osoby trzeciej → brak licencji do sprawdzenia).
+`img/reklama.jpg` (600×300) — własna kompozycja wygenerowana lokalnie skryptem
+Python/PIL (jasne tło, bąbelki, pudełko proszku do prania „Krzak” z ceną 9,99 zł).
+Grafika fikcyjnej marki wykonana samodzielnie, bez materiałów osób trzecich →
+brak wymogu licencji i atrybucji.
+Stare placeholdery `.svg` zostały usunięte przed spakowaniem projektu.
 
 ## USA — usa.html (3 eventy)
 
