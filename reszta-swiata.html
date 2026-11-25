@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Zieliński">
+    <meta name="description" content="Historia lotów kosmicznych poza USA i ZSRR: Astérix, Ariane, Chandrayaan-3 oraz tabela państw kosmicznych. Projekt P1, witryna typu MPA.">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, MPA, loty kosmiczne">
+    <title>Reszta Świata - Historia Lotów kosmicznych</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <a id="skip-link" href="#tresc">Przejdź do treści</a>
+    <header class="site-header">
+        <p>
+            <a href="./index.html">
+                <img alt="Logo Orbita" id="logo" src="./img/logo.png" width="40" height="40">
+                Orbita - Historia Lotów Kosmicznych
+            </a>
+        </p>
+        <nav aria-label="Nawigacja Główna">
+            <ul>
+                <li><a href="./index.html">Strona Główna</a></li>
+                <li><a href="./usa.html">USA</a></li>
+                <li><a href="./zsrr.html">ZSRR</a></li>
+                <li><a id="selected" href="./reszta-swiata.html" aria-current="page">Reszta Świata</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="tresc">
+        <h1>Reszta Świata - Historia Lotów kosmicznych</h1>
+        <section>
+            <h2>W skrócie</h2>
+            <div class="o-stronie">
+                <p>
+                    Podbój kosmosu to nie tylko dwaj giganci wyścigu kosmicznego. Własne satelity
+                    wyniosły także m.in. Francja, Japonia, Chiny, Wielka Brytania i Indie, a Europę
+                    reprezentuje agencja ESA ze swoją rodziną rakiet Ariane. Poniżej przedstawiamy
+                    trzy najważniejsze osiągnięcia oraz tabelę państw, które zdobyły własny
+                    dostęp do kosmosu.
+                </p>
+                <aside class="reklama" aria-label="Baner reklamowy">
+                    <img alt="Miejsce na reklamę" src="img/reklama.svg" width="600" height="300">
+                </aside>
+            </div>
+        </section>
+        <section>
+            <h2>Najważniejsze wydarzenia</h2>
+            <ol class="wydarzenia">
+                <li>
+                    <article>
+                        <h3>1965 — Francja wynosi satelitę Astérix</h3>
+                        <p>
+                            26 listopada 1965 roku Francja wyniosła rakietą Diamant-A satelitę
+                            Astérix, stając się trzecim państwem świata — po ZSRR i USA —
+                            z własnym satelitą na orbicie. Start odbył się z poligonu Hammaguir
+                            na terenie Algierii. Satelita zawdzięcza nazwę bohaterowi francuskiego
+                            komiksu o dzielnym Galu.
+                        </p>
+                        <figure>
+                            <img alt="Makieta francuskiego satelity Astérix w muzeum w Le Bourget" src="./img/swiat-1965.jpg" width="1280" height="1000">
+                            <figcaption>1965 — francuski satelita Astérix (zdjęcie: Pline / Wikimedia Commons, CC BY-SA 3.0)</figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>1979 — pierwszy start rakiety Ariane</h3>
+                        <p>
+                            24 grudnia 1979 roku z kosmodromu Kourou w Gujanie Francuskiej
+                            wystartowała pierwsza rakieta Ariane 1, zbudowana przez Europejską
+                            Agencję Kosmiczną (ESA). Rodzina rakiet Ariane na stałe weszła
+                            do czołówki środków wynoszenia satelitów na orbitę, a Kourou stało
+                            się jednym z najważniejszych kosmodromów świata.
+                        </p>
+                        <figure>
+                            <img alt="Pierwszy start rakiety Ariane 1 z kosmodromu Kourou" src="./img/swiat-1979.jpg" width="1920" height="2446">
+                            <figcaption>1979 — pierwszy start rakiety Ariane 1 (zdjęcie: ESA, CC BY-SA 3.0 IGO)</figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>2023 — Indie lądują przy biegunie Księżyca</h3>
+                        <p>
+                            23 sierpnia 2023 roku lądownik Vikram misji Chandrayaan-3 wykonał
+                            miękkie lądowanie w rejonie południowego bieguna Księżyca. Indie stały
+                            się czwartym państwem w historii, które wylądowało na Srebrnym Globie,
+                            i pierwszym, które zrobiło to tak blisko bieguna. Misja potwierdziła
+                            przodującą pozycję indyjskiej agencji kosmicznej ISRO.
+                        </p>
+                        <figure>
+                            <img alt="Lądownik Vikram na powierzchni Księżyca, misja Chandrayaan-3" src="./img/swiat-2023.png" width="1280" height="902">
+                            <figcaption>2023 — lądownik Vikram misji Chandrayaan-3 (zdjęcie: semeion.photo, CC BY 2.0)</figcaption>
+                        </figure>
+                    </article>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Państwa z własnym dostępem do kosmosu</h2>
+            <table>
+                <caption>Państwa, które samodzielnie wyniosły satelitę na orbitę (1957–1980)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Państwo</th>
+                        <th scope="col">Rok</th>
+                        <th scope="col">Pierwszy satelita</th>
+                        <th scope="col">Rakieta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ZSRR</td>
+                        <td>1957</td>
+                        <td>Sputnik 1</td>
+                        <td>R-7</td>
+                    </tr>
+                    <tr>
+                        <td>USA</td>
+                        <td>1958</td>
+                        <td>Explorer 1</td>
+                        <td>Juno I</td>
+                    </tr>
+                    <tr>
+                        <td>Francja</td>
+                        <td>1965</td>
+                        <td>Astérix</td>
+                        <td>Diamant-A</td>
+                    </tr>
+                    <tr>
+                        <td>Japonia</td>
+                        <td>1970</td>
+                        <td>Ōsumi</td>
+                        <td>Lambda-4S</td>
+                    </tr>
+                    <tr>
+                        <td>Chiny</td>
+                        <td>1970</td>
+                        <td>Dong Fang Hong 1</td>
+                        <td>Chang Zheng 1</td>
+                    </tr>
+                    <tr>
+                        <td>Wielka Brytania</td>
+                        <td>1971</td>
+                        <td>Prospero</td>
+                        <td>Black Arrow</td>
+                    </tr>
+                    <tr>
+                        <td>Indie</td>
+                        <td>1980</td>
+                        <td>Rohini</td>
+                        <td>SLV-3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <small id="footer">Copyright &copy; 2026 Jakub Zieliński</small>
+        <p><small id="zegar"></small></p>
+        <button type="button" id="zegar-btn" onclick="reset_zegar()" aria-pressed="false">Zatrzymaj/Wznów Zegar</button>
+        <button type="button" id="motyw-btn" aria-pressed="false">Ciemny motyw</button>
+    </footer>
+</body>
+</html>

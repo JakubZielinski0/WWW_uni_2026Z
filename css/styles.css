@@ -144,7 +144,50 @@ aside.reklama img {
     display: block;
     width: 100%;
     height: auto;
-    border: 1px solid #000;
+    border: 1px solid var(--linia);
+}
+
+.wydarzenia {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+.wydarzenia li {
+    margin-bottom: 1.5rem;
+}
+.wydarzenia figure {
+    margin: 1rem 0 0;
+}
+.wydarzenia img {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+}
+.wydarzenia figcaption {
+    max-width: 30rem;
+    font-size: 0.9rem;
+    color: var(--przygaszony);
+    margin-top: 0.4rem;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table caption {
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+th,
+td {
+    border: 1px solid var(--linia);
+    padding: 0.5rem;
+    text-align: left;
+}
+form label {
+    display: block;
+}
+.blad {
+    color: red;
 }
 
 @media (max-width: 40rem) {

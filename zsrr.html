@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Zieliński">
+    <meta name="description" content="Historia lotów kosmicznych: radzieckie kamienie milowe - Sputnik 1, Jurij Gagarin, pierwszy spacer kosmiczny. Projekt P1, witryna typu MPA.">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, MPA, loty kosmiczne">
+    <title>ZSRR - Historia Lotów kosmicznych</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <a id="skip-link" href="#tresc">Przejdź do treści</a>
+    <header class="site-header">
+        <p>
+            <a href="./index.html">
+                <img alt="Logo Orbita" id="logo" src="./img/logo.png" width="40" height="40">
+                Orbita - Historia Lotów Kosmicznych
+            </a>
+        </p>
+        <nav aria-label="Nawigacja Główna">
+            <ul>
+                <li><a href="./index.html">Strona Główna</a></li>
+                <li><a href="./usa.html">USA</a></li>
+                <li><a id="selected" href="./zsrr.html" aria-current="page">ZSRR</a></li>
+                <li><a href="./reszta-swiata.html">Reszta Świata</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="tresc">
+        <h1>ZSRR - Historia Lotów kosmicznych</h1>
+        <section>
+            <h2>W skrócie</h2>
+            <div class="o-stronie">
+                <p>
+                    Związek Radziecki to prawdziwy pionier podboju kosmosu: pierwszy sztuczny
+                    satelita (Sputnik 1), pierwszy człowiek w kosmosie (Jurij Gagarin), pierwszy
+                    spacer kosmiczny (Aleksiej Leonow) i pierwsza stacja orbitalna (Salut 1).
+                    Za tymi rekordami stały biura konstrukcyjne, którym przewodził Siergiej
+                    Korolow. Poniżej przedstawiamy trzy najważniejsze wydarzenia radzieckiej
+                    kosmonautyki.
+                </p>
+                <aside class="reklama" aria-label="Baner reklamowy">
+                    <img alt="Miejsce na reklamę" src="img/reklama.svg" width="600" height="300">
+                </aside>
+            </div>
+        </section>
+        <section>
+            <h2>Najważniejsze wydarzenia</h2>
+            <ol class="wydarzenia">
+                <li>
+                    <article>
+                        <h3>1957 — Sputnik 1, pierwszy sztuczny satelita Ziemi</h3>
+                        <p>
+                            4 października 1957 roku Związek Radziecki wyniósł na orbitę Sputnika 1,
+                            pierwszego sztucznego satelitę w historii. Przekazywany przez niego
+                            radiowy sygnał słyszeli radioamatorzy na całym świecie. Start zakończył
+                            się sukcesem dzięki rakiecie R-7, skonstruowanej w zespole
+                            Siergieja Korolowa, i rozpoczął wyścig kosmiczny między
+                            supermocarstwami.
+                        </p>
+                        <figure>
+                            <img alt="Makieta satelity Sputnik 1" src="./img/zsrr-1957.jpg" width="1280" height="905">
+                            <figcaption>1957 — Sputnik 1, pierwszy sztuczny satelita Ziemi (zdjęcie: shakko / Wikimedia Commons, CC BY-SA 3.0)</figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>1961 — Jurij Gagarin, pierwszy człowiek w kosmosie</h3>
+                        <p>
+                            12 kwietnia 1961 roku Jurij Gagarin na pokładzie Wostoka 1 po raz
+                            pierwszy opłynął Ziemię z orbity. Lot trwał 108 minut i zakończył się
+                            lądowaniem w rejonie Saratowa. Okrzyk Gagarina „Pojechali!"
+                            przeszedł do historii jako symbol początku ery lotów załogowych.
+                        </p>
+                        <figure>
+                            <img alt="Jurij Gagarin na konferencji prasowej w Helsinkach, 1961" src="./img/zsrr-1961.jpg" width="1280" height="1600">
+                            <figcaption>1961 — Jurij Gagarin, pierwszy człowiek w kosmosie (zdjęcie: domena publiczna)</figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>1965 — Woschod 2 i pierwszy spacer kosmiczny</h3>
+                        <p>
+                            18 marca 1965 roku Aleksiej Leonow wyszedł przez śluzę kapsuły
+                            Woschod 2 i przez około 12 minut przebywał w otwartej przestrzeni
+                            kosmicznej jako pierwszy człowiek w historii. Z pojazdem łączyła go
+                            tylko linka o długości około 5 metrów. Po awarii systemu sterowania
+                            kapsuła wylądowała w tajdze na Uralu, z dala od planowanego miejsca.
+                        </p>
+                        <figure>
+                            <img alt="Śluza powietrzowa i skafander Berkut z misji Woschod 2" src="./img/zsrr-1965.jpg" width="1280" height="1707">
+                            <figcaption>1965 — wyposażenie misji Woschod 2 i pierwszy spacer kosmiczny (zdjęcie: domena publiczna)</figcaption>
+                        </figure>
+                    </article>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <small id="footer">Copyright &copy; 2026 Jakub Zieliński</small>
+        <p><small id="zegar"></small></p>
+        <button type="button" id="zegar-btn" onclick="reset_zegar()" aria-pressed="false">Zatrzymaj/Wznów Zegar</button>
+        <button type="button" id="motyw-btn" aria-pressed="false">Ciemny motyw</button>
+    </footer>
+</body>
+</html>

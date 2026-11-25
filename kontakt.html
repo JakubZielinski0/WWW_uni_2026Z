@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Zieliński">
+    <meta name="description" content="Napisz do nas: formularz kontaktowy z walidacją danych. Projekt P1, witryna typu MPA.">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, MPA, loty kosmiczne">
+    <title>Kontakt - Historia Lotów kosmicznych</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <a id="skip-link" href="#tresc">Przejdź do treści</a>
+    <header class="site-header">
+        <p>
+            <a href="./index.html">
+                <img alt="Logo Orbita" id="logo" src="./img/logo.png" width="40" height="40">
+                Orbita - Historia Lotów Kosmicznych
+            </a>
+        </p>
+        <nav aria-label="Nawigacja Główna">
+            <ul>
+                <li><a href="./index.html">Strona Główna</a></li>
+                <li><a href="./usa.html">USA</a></li>
+                <li><a href="./zsrr.html">ZSRR</a></li>
+                <li><a href="./reszta-swiata.html">Reszta Świata</a></li>
+                <li><a id="selected" href="./kontakt.html" aria-current="page">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="tresc">
+        <h1>Kontakt</h1>
+        <form id="formularz" action="https://webdevbasics.net/scripts/demo.php" method="post">
+            <fieldset>
+                <legend>Napisz do nas</legend>
+                <label for="imie">Imię i nazwisko</label>
+                <input type="text" id="imie" name="imie" required
+                    pattern="[A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż]+ [A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż-]+"
+                    title="Imię i nazwisko, np. Jan Kowalski">
+                <label for="email">Adres e-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label><input type="radio" name="strona" value="usa" required> Bardziej interesuje mnie USA</label>
+                <label><input type="radio" name="strona" value="zsrr"> Bardziej interesuje mnie ZSRR</label>
+                <label for="ulubiona">Ulubiona misja</label>
+                <select id="ulubiona" name="ulubiona" required>
+                    <option value="">- wybierz -</option>
+                    <option>Apollo 11</option>
+                    <option>Wostok 1</option>
+                    <option>Ariane 1</option>
+                    <option>Chandrayaan-3</option>
+                </select>
+                <label><input type="checkbox" name="newsletter" value="tak"> Chcę otrzymywać newsletter</label>
+                <label for="wiadomosc">Wiadomość</label>
+                <textarea id="wiadomosc" name="wiadomosc" rows="10" required></textarea>
+                <label for="data-od">Pytanie dotyczy wydarzeń od</label>
+                <input type="date" id="data-od" name="data-od" required>
+                <label for="data-do">do</label>
+                <input type="date" id="data-do" name="data-do" required>
+                <p id="blad"></p>
+            </fieldset>
+            <div class="przyciski">
+                <button type="submit">Wyślij</button>
+                <button type="reset">Anuluj</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <small id="footer">Copyright &copy; 2026 Jakub Zieliński</small>
+        <p><small id="zegar"></small></p>
+        <button type="button" id="zegar-btn" onclick="reset_zegar()" aria-pressed="false">Zatrzymaj/Wznów Zegar</button>
+        <button type="button" id="motyw-btn" aria-pressed="false">Ciemny motyw</button>
+    </footer>
+</body>
+</html>
