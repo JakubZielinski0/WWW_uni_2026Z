@@ -40,12 +40,12 @@
                     title="Imię i nazwisko, np. Jan Kowalski">
                 <label for="email">Adres e-mail</label>
                 <input type="email" id="email" name="email" required>
-                <legend>
+                <p>
                     Historia misji kosmicznych którego kraju cię najbardziej interesuje?
-                </legend>
+                </p>
                 <label><input type="radio" name="strona" value="usa" required>USA</label>
                 <label><input type="radio" name="strona" value="zsrr">ZSRR</label>
-                <label><input type="radio" name="strona" value="zsrr">Reszta Świata</label>
+                <label><input type="radio" name="strona" value="reszta">Reszta Świata</label>
                 <label for="ulubiona">Ulubiona misja</label>
                 <select id="ulubiona" name="ulubiona" required>
                     <option value="">- wybierz -</option>
@@ -57,10 +57,11 @@
                 <label><input type="checkbox" name="newsletter" value="tak"> Chcę otrzymywać newsletter</label>
                 <label for="wiadomosc">Wiadomość</label>
                 <textarea id="wiadomosc" name="wiadomosc" rows="10" required></textarea>
-                <label for="data-od">Pytanie dotyczy wydarzeń od</label>
+                <label for="data-od">Najbardziej interesuje cię historia lotów kosmicznych przedziale czasu:</label>
                 <input type="date" id="data-od" name="data-od" required>
                 <label for="data-do">do</label>
                 <input type="date" id="data-do" name="data-do" required>
+                <label><input type="checkbox" name="regulamin" value="tak">Akceptuję Regulamin</label>
                 <p id="blad"></p>
             </fieldset>
             <div class="przyciski">
